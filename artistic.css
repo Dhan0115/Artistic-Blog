@@ -1,0 +1,133 @@
+:root {
+
+}
+
+* {
+    box-sizing: border;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+html,
+body  {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8ffff;
+}
+
+.header {
+    padding: 20px 40px;
+}
+
+.header_wrapper {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+
+.header .header_menu {
+    font-weight: 600;
+    transform: rotate(90deg);
+    font-size: 22px;
+}
+
+.header .header_title {
+    font-weight: 300;
+}
+
+.gallery {
+    background-color: #eeeff5;
+    padding: 40px;
+}
+
+.gallery_wrapper,
+.content {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.gallery_wrapper {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.gallery .gallery_item {
+    height: 25vh;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.gallery .gallery_item:first-child {
+    background-image: url(https://i.pinimg.com/236x/c2/0a/c0/c20ac04784f1d90b315740e4042f6f1e.jpg);
+}
+
+.gallery .gallery_item:nth-child(2){
+    background-image: url(https://i.pinimg.com/564x/e5/7e/b7/e57eb7e28930590d6c059345af1f192c.jpg)
+}
+
+.gallery .gallery_item:last-child {
+    background-image: url(https://i.pinimg.com/originals/7c/91/c3/7c91c3b5caaa09d5cd8fe02e95b461ba.jpg);
+}
+
+.content {
+    margin-top: 50px;
+    padding: 0px 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+}
+
+.content .content_title {
+    text-transform: uppercase;
+    color: rgba(0,0,0,0.8);
+}
+
+.content .content_description {
+    color: rgba(0,0,0,0.5);
+    font-size: 14px;
+}
+
+.content .content_column {
+    display: grid;
+    grid-gap: 30px;
+}
+
+.content .content_detalist {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin: 30px 0px;
+}
+
+.content_detalist .datalist_name {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.content_detalist .datalist_value {
+    color: rgba(0,0,0,0.6);
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.content .content_link {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: inherit;
+    font-weight: 600;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #3498db;
+}
